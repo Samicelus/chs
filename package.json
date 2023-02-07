@@ -53,7 +53,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-consult",
+    "start": "egg-scripts start --daemon --title=egg-server-consult --ignore-stderr",
     "stop": "egg-scripts stop --title=egg-server-consult",
     "dev": "egg-bin dev  --sticky",
     "debug": "egg-bin debug",
