@@ -75,6 +75,7 @@ module.exports = (appInfo) => {
         url: "mongodb://127.0.0.1/test",
         options: {
           autoIndex: true,
+          useUnifiedTopology: true,
           reconnectTries: Number.MAX_VALUE,
           reconnectInterval: 500,
           poolSize: 10,
@@ -85,6 +86,7 @@ module.exports = (appInfo) => {
         url: "mongodb://127.0.0.1/rd",
         options: {
           autoIndex: true,
+          useUnifiedTopology: true,
           reconnectTries: Number.MAX_VALUE,
           reconnectInterval: 500,
           poolSize: 10,
