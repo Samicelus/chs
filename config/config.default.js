@@ -137,11 +137,6 @@ module.exports = (appInfo) => {
     allowMethods: "GET,HEAD,PUT,POST,DELETE,PATCH",
   };
 
-  config.cos = {
-    client: {},
-    useAgent: true,
-  };
-
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
