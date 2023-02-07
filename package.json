@@ -1,0 +1,79 @@
+{
+  "name": "consultModulation",
+  "version": "1.4.8-001",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@onewalker/egg-cos": "^0.1.2",
+    "@wecom/crypto": "^1.0.0",
+    "axios": "^0.24.0",
+    "cos-nodejs-sdk-v5": "^2.6.2",
+    "docx": "^5.2.2",
+    "egg": "^2.15.1",
+    "egg-alinode": "^2.0.1",
+    "egg-bus": "^1.0.0-alpha.9",
+    "egg-cors": "^2.2.3",
+    "egg-cos": "^1.0.2",
+    "egg-lodash": "^1.0.1",
+    "egg-mongoose": "^3.2.0",
+    "egg-mysql": "^3.0.0",
+    "egg-redis": "^2.4.0",
+    "egg-router-plus": "^1.3.1",
+    "egg-scripts": "^2.13.0",
+    "egg-socket.io": "^4.1.6",
+    "egg-validate": "^2.0.2",
+    "form-data": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jssm4": "^1.0.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.13.13",
+    "mysql": "^2.18.1",
+    "parameter": "^3.6.0",
+    "qs": "^6.10.1",
+    "sm3": "^1.0.3",
+    "soap": "^0.36.0",
+    "strong-soap": "^3.0.0",
+    "xlsx": "^0.16.5",
+    "xml2js": "^0.4.23",
+    "xml2js-force-cdata": "^1.0.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.14.1",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-consult",
+    "stop": "egg-scripts stop --title=egg-server-consult",
+    "dev": "egg-bin dev  --sticky",
+    "debug": "egg-bin debug",
+    "test": "egg-bin test",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "eggScriptsConfig": {
+    "ignore-stderr": true
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
